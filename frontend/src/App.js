@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
-import todo from './components/todo';
+import Todo from './components/todo';
 
 function App() {
   const [userName, setUsername] = useState('')
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <todo/>
+      <Todo/>
     </div>
 
 
