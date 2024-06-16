@@ -28,4 +28,9 @@ jobs:
         cd frontend
         npm i
         CI='' npm run build
+        cd ..
+        pm2 stop 0
+        pm2 start 0
+        pm2 save
+        sudo service nginx restart
     
