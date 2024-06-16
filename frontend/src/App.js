@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './App.css';
+import todo from './components/todo';
 
 function App() {
   const [userName, setUsername] = useState('')
@@ -16,10 +17,9 @@ function App() {
   }
 
   return (
-    <>
-      <h1>My fronetnd</h1>
-      <h3>hello world</h3>
-    </>
+    <div className="App">
+      <todo/>
+    </div>
 
 
 
