@@ -52,6 +52,7 @@ proxy_cache_bypass $http_upgrade;
 }
 
 Script Workflow CI/CD:
+
 name: Node.js CI
 
 on:
@@ -71,11 +72,11 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v4 Sử dụng action để checkout mã nguồn từ repository.
-    - name: Use Node.js ${{ matrix.node-version }} Đặt tên cho bước này là "Use Node.js ${{ matrix.node-version }}" (sử dụng phiên bản Node.js tương ứng từ ma trận).
-      uses: actions/setup-node@v3 Sử dụng action để thiết lập môi trường Node.js.
+    - uses: actions/checkout@v4
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }} 
+        node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: |
         npm i
