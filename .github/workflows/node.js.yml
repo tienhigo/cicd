@@ -27,7 +27,7 @@ jobs:
         npm i
         cd frontend
         npm i
-        npm run build
+        CI='' npm run build
         npm run test
         cd ..
         pm2 stop 0
