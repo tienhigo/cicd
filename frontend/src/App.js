@@ -18,7 +18,7 @@ function App() {
 
   const todo = [
     { id: 1, title: 'make dinner', completed: true },
-    { id: 2, title: 'wash car', completed: true }
+    { id: 2, title: 'wash car', completed: false}
   ]
 
   return (
