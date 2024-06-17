@@ -16,19 +16,13 @@ function App() {
     console.log(response);
   }
 
-  const todo = [
-    { id: 1, title: 'make dinner', completed: true },
-    { id: 2, title: 'wash car', completed: false}
-  ]
-
+ 
   return (
-    
-      <div className="App">
-      <h1>Todo List</h1>
-      {todo.map((todo) => {
-        return (<Todo todo={todo} />)
-      })}
+    <div className="App">
+      <Todo/>
     </div>
+    
+  
    
   
 
