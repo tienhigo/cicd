@@ -55,7 +55,7 @@ vào terminal của folder project:
 
 Project sẽ được push thành công lên Github.
 
-Tạo Linnux Server trên DigitalOcean:
+Tạo Linux Server trên DigitalOcean:
 
     Vào website DigitalOcean ==>Bấm nút Create chọn Droplets ==> chọn Ubuntu ==>Choose a plan==>Chọn data center region gần nhất==>Authentication chọn Password rồi nhập password vào==>Finalize and Create: 1 droplets và đặt tên cho hostname==>Create droplets
 
