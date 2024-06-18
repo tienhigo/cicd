@@ -87,8 +87,8 @@ Thiết lập cấu hình Reverse Proxy – Nginx:
 
 
 Script Workflow CI/CD:
-
-    name: Node.js CI
+    
+        name: Node.js CI
     
     on:
       push:
@@ -101,28 +101,29 @@ Script Workflow CI/CD:
     
         runs-on: self-hosted
     
-      strategy:
+        strategy:
           matrix:
             node-version: [16.x, 18.x]
             # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     
-    steps:
-        - uses: actions/checkout@v4
-        - name: Use Node.js ${{ matrix.node-version }}
-          uses: actions/setup-node@v3
-          with:
-            node-version: ${{ matrix.node-version }}
-            cache: 'npm'
-        - run: |
-            npm i
-            cd frontend
-            npm i
-            CI='' npm run build
-            npm run test
-            cd ..
-            pm2 stop 0
-            pm2 start 0
-            pm2 save
-            sudo service nginx restart
+        steps:
+          - uses: actions/checkout@v4
+          - name: Use Node.js ${{ matrix.node-version }}
+            uses: actions/setup-node@v3
+            with:
+              node-version: ${{ matrix.node-version }}
+              cache: 'npm'
+          - run: |
+              npm i
+              cd frontend
+              npm i
+              CI='' npm run build
+              npm run test
+              cd ..
+              pm2 stop 0
+              pm2 start 0
+              pm2 save
+              sudo service nginx restart
+
         
 
