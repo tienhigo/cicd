@@ -96,12 +96,12 @@ Script Workflow CI/CD:
     
         runs-on: self-hosted
     
-        strategy:
+      strategy:
           matrix:
             node-version: [16.x, 18.x]
             # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     
-        steps:
+    steps:
         - uses: actions/checkout@v4
         - name: Use Node.js ${{ matrix.node-version }}
           uses: actions/setup-node@v3
