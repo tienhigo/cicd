@@ -1,6 +1,11 @@
 Triển khai React và Node.js website với DigitalOcean server, nginx và Github Action CI/CD
 
 
+Link web: 167.71.214.106
+
+Link repo chứa code sites, tài liệu, scripts : https://github.com/tienhigo/cicd.git
+
+
 Tạo folder project:
 
     npm init
