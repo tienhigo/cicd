@@ -43,7 +43,7 @@ vào lại folder project:
 
     git remote add origin link_repo_vừa_tạo
 
-tạo 1 file .gitignore với nội dung là node_modules để thư mục node_modules không được oush lên Github
+tạo 1 file .gitignore với nội dung là node_modules để thư mục node_modules không được push lên Github
 
 vào terminal của folder project:
 
@@ -68,6 +68,15 @@ Vào droplet console để connect bằng password đã set.
     sudo apt update
     
     sudo apt install nodejs
+    
+    sudo apt nginx
+    
+Tạo user để làm việc với Github action
+
+Tạo một Github Runner trong Github repository của mình
+
+Trong Linux console, vào thư mục var/www/mywebsites/etc/nginx/sites-available để thiết lập cấu hình Reverse Proxy – Nginx.
+
 
 Thiết lập cấu hình Reverse Proxy – Nginx:  
 
